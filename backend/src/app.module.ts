@@ -26,6 +26,7 @@ import { UserModule } from './user/user.module';
         database: configService.get('DB_NAME'),
         synchronize: true,
         autoLoadEntities: true,
+        // entities: [__dirname + 'entities/**/*.entity.ts'],
       }),
       inject: [ConfigService],
     }),
